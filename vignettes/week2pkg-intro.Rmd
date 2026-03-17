@@ -1,0 +1,36 @@
+---
+title: "Getting Started with week2pkg"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting Started with week2pkg}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+`week2pkg` provides lightweight helpers for common Week 2-style numeric vector
+operations: summary statistics and z-score standardization.
+
+## Summarize numeric data
+
+```{r}
+library(week2pkg)
+
+x <- c(4, 6, 8, 10, 12)
+summarize_numeric(x)
+```
+
+## Compute z-scores
+
+```{r}
+zscore_numeric(x)
+```
+
+These helpers are intentionally minimal and designed to be easy to read,
+re-use, and test.
