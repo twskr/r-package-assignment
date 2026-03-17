@@ -1,0 +1,19 @@
+Package: week2pkg
+Type: Package
+Title: Simple Data Summary Helpers from Week 2 Scripts
+Version: 0.1.0
+Authors@R: person(given = "Codex", family = "Agent", role = c("aut", "cre"), email = "codex@openai.com")
+Description: Provides a small set of utility functions for summarizing and scaling numeric vectors.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports:
+    stats
+Suggests:
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
